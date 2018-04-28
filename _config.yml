@@ -1,0 +1,55 @@
+# Site settings
+title: Rahul Ghangas
+description: Hey Stranger,
+  How's it going?
+cover: assets/images/cover.jpg
+#logo: assets/images/logo.png
+baseurl: "" # the subpath of your site, e.g. /blog/ or / for root
+url: "https://rahulghangas.github.io" # the base hostname & protocol for your site
+paginate:	5 # The number of posts to show per page on your homepage
+
+# Social
+facebook: Rahul Ghangas
+github:  rahulghangas
+
+#Additional Pages
+about: about
+permalink: /:title
+
+
+# Google Analytics
+analytics_id: "UA-118341287-1"
+
+# Build settings
+sass:
+  sass_dir: _sass
+markdown: kramdown
+include: ['_pages']
+kramdown:
+  input: GFM
+  parse_block_html: true
+
+plugins:
+  - jekyll-paginate
+
+
+# Settings for rake task
+safe: False
+lsi: False
+username: rahulghangas #github username
+repo: rahulghangas.github.io #github repository
+branch: master #branch
+relative_source: ../rahulghangas/ #source directory
+destination: ../rahulghangas-pages/ #destination directory
+production_url:  https://rahulghangas.github.io
+source_url:  https://github.com/rahulghanags/rahulghanags.github.io #source repository url
+
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
